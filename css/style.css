@@ -1,0 +1,324 @@
+body {
+    background-color: aliceblue; /*color de la base */
+    margin: 0; /*me permite tener un diseño completo y aprovechar toda la pantalla */
+    text-align: center;
+}
+.contenido { /*esta clase la coloque al elemento main, que es padre de los demas elementos y por ende atribuye las siguientes caracteristicas */
+    display: grid; /*activa el display grid con el cual me permite acomodar el contenido por cuadros y coordenadas */
+    grid-template-columns: repeat(7, 1fr); /*divide horizontalmente en 7 secciones */
+    grid-template-rows: repeat(14, 50px); /*divide verticalmente en X secciones de 50px*/
+}
+.apartado {
+    margin: 5px 10px;
+}
+h1, h2, p, ul{ 
+    margin: 0;
+}
+h2 {
+    margin-bottom: 5px;
+}
+.bg-color { /*este es el fondo de color en el lado izquierdo */
+    background-color: burlywood;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 15;
+}
+.cabecera {
+    background-color: #333333;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.cabecera h1 {
+    color: white;
+    margin-top: 25px;
+}
+
+.image-profile {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-radius: 120px;
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
+}
+
+
+.qsoy {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    border-bottom: 1px solid #423a3a;
+}
+
+.estudios {
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    border-bottom: 1px solid #423a3a;
+}
+
+.habilidad {
+    grid-row-start: 8;
+    grid-row-end: 11;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    border-bottom: 1px solid #423a3a;
+}
+
+.exp-lab {
+    grid-row-start: 11;
+    grid-row-end: 13;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    border-bottom: 1px solid #423a3a;
+}
+
+.skills {
+    grid-row-start: 13;
+    grid-row-end: 15;
+    grid-column-start: 2;
+    grid-column-end: 8;
+}
+.contacto {
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 10px;
+    padding: 0;
+}
+.cont-cont {
+    background-color: rgba(66, 65, 45, 0.555);
+    color: white;
+    border-radius: 10px;
+}
+
+/** COMIENZA RESPONSIVE DESIGN **/ /** COMIENZA RESPONSIVE DESIGN **/ /** COMIENZA RESPONSIVE DESIGN **/
+/** COMIENZA RESPONSIVE DESIGN **/ /** COMIENZA RESPONSIVE DESIGN **/ /** COMIENZA RESPONSIVE DESIGN **/
+/** COMIENZA RESPONSIVE DESIGN **/ /** COMIENZA RESPONSIVE DESIGN **/ /** COMIENZA RESPONSIVE DESIGN **/
+
+@media screen and (max-width: 768px) {
+    
+    
+    .contenido { /*esta clase la coloque al elemento main, que es padre de los demas elementos y por ende atribuye las siguientes caracteristicas */
+        display: grid; /*activa el display grid con el cual me permite acomodar el contenido por cuadros y coordenadas */
+        grid-template-columns: repeat(3, 1fr); /*divide horizontalmente en 7 secciones */
+        grid-template-rows: repeat(18, 50px); /*divide verticalmente en X secciones de 50px*/
+    }
+    .apartado {
+        margin: 5px 15px;
+    }
+    p, ul{
+        font-size: 12px;
+    }
+    h1, h2, p, ul{ 
+        margin: 0;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    
+    .cabecera h1 {
+        color: white;
+        margin-top: 15px;
+    }
+    .bg-color { /*este es el fondo de color en el lado izquierdo */
+        background-color: burlywood;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        
+    }
+    .cabecera {
+        background-color: #333333;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .cabecera h1 {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .image-profile {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-radius: 120px;
+        border: 2px solid white;
+        height: 190px;
+        width: 190px;
+        margin-left: 30px;
+    }
+
+
+    .qsoy {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 8;
+        border-bottom: 1px solid #423a3a;
+    }
+
+    .estudios {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 8;
+        grid-row-end: 11;
+        border-bottom: 1px solid #423a3a;
+    }
+
+    .habilidad {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 11;
+        grid-row-end: 13;
+        border-bottom: 1px solid #423a3a;
+    }
+
+    .exp-lab {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 13;
+        grid-row-end: 15;
+        border-bottom: 1px solid #423a3a;
+    }
+    .skills {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 15;
+        grid-row-end: 17;
+        border-bottom: 1px solid #423a3a;
+    }
+
+    .contacto {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 17;
+        grid-row-end: 19;
+        margin: 10px;
+        padding: 0;
+    }
+    .cont-cont {
+        background-color: aliceblue;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    
+    .contenido { /*esta clase la coloque al elemento main, que es padre de los demas elementos y por ende atribuye las siguientes caracteristicas */
+        display: grid; /*activa el display grid con el cual me permite acomodar el contenido por cuadros y coordenadas */
+        grid-template-columns: repeat(3, 1fr); /*divide horizontalmente en 7 secciones */
+        grid-template-rows: repeat(21, 50px); /*divide verticalmente en X secciones de 50px*/
+    }
+    .apartado {
+        margin: 5px 10px;
+    }
+    p, ul{
+        font-size: 12px;
+    }
+    h1, h2, p, ul{ 
+        margin: 0;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    
+    .cabecera h1 {
+        color: white;
+        margin-top: 15px;
+    }
+    .bg-color { /*este es el fondo de color en el lado izquierdo */
+        background-color: burlywood;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        
+    }
+    .cabecera {
+        background-color: #333333;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .cabecera h1 {
+        color: white;
+        margin-top: 10px;
+    }
+
+    .image-profile {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-radius: 120px;
+        border: 2px solid white;
+        height: 190px;
+        width: 190px;
+    }
+
+
+    .qsoy {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 6;
+        grid-row-end: 9;
+        border-bottom: 1px solid #423a3a;
+    }
+
+    .estudios {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 9;
+        grid-row-end: 12;
+        border-bottom: 1px solid #423a3a;
+    }
+
+    .habilidad {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 12;
+        grid-row-end: 15;
+        border-bottom: 1px solid #423a3a;
+    }
+
+    .exp-lab {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 15;
+        grid-row-end: 18;
+        border-bottom: 1px solid #423a3a;
+    }
+    .skills {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 18;
+        grid-row-end: 20;
+        border-bottom: 1px solid #423a3a;
+    }
+
+    .contacto {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 20;
+        grid-row-end: 21;
+        margin: 10px;
+        padding: 0;
+    }
+    .cont-cont {
+        background-color: aliceblue;
+        color: black;
+    }
+}
